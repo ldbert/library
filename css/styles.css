@@ -1,10 +1,73 @@
 
+body{
+  font-family: 'Roboto Mono', monospace;
+  font-size:18px ;
+}
+
+#cont{
+  /* padding-left:0px;
+  padding-right: 0px; */
+  background-color: white;
+  font-family: 'Roboto Mono', monospace;
+  
+}
+
+.page-header{
+  font-size: 2em;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+p.displayBookForm{
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.col-md-2{
+  background-color:lightgreen;
+  padding: 10px;
+}
+
+.col-md-10{
+  background-color: lightgrey;
+}
+
+#libDisplay{
+  margin-top: 10px;
+  background-color: lightgrey;
+}
+
+button{
+  margin-top: 10px !important;
+}
+
+.card{
+  padding: 5px;
+  background-color:lightsteelblue !important;
+  max-height: 600px;
+}
 
 
+.footer{
+  font-size: 1em;
+  font-family: 'Roboto Mono', monospace;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
 
-footer{
-  background: lightseagreen;
-  grid-area: footer;
+a{
+  color:gray !important;
+}
+
+a:hover{
+  color: black !important;
+  text-decoration: none !important;
 }
 
 

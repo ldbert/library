@@ -23,8 +23,8 @@ function deleteMe(d) {
 
      alert("You are deliting book with id: " + d);
      let elem = document.getElementById(d);
-    elem.parentNode.removeChild(elem);
-    elem.remove();
+     elem.parentNode.removeChild(elem);
+     elem.remove();
     
 }
 
@@ -170,6 +170,7 @@ function addBook() {
     // create a new div element
     let cardDiv = document.createElement("div");
     cardDiv.id = "book" + i;
+    cardDiv.classList.add("stile");
 
 
 
