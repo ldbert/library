@@ -65,7 +65,7 @@ function formValidation(title, author, pages){
         alert("Please enter a valid title " + title.length);
         throw new Error("Something went badly wrong!");
    
-    }  else if( author.length == 0 || !(/^[a-zA-Z]+$/.test(author))) {
+    }  else if( author.length == 0 || !(/^[a-zA-Z\s]*$/.test(author))) {
         
         alert("Please enter a valid author's name"); 
         throw new Error("Something went badly wrong!");
@@ -118,7 +118,8 @@ function addBook() {
 
     // "book"+(i-1)
     let editBookBtn= document.createElement("button");
-    editBookBtn.id="edit"+"book"+i;
+    editBookBtn.id="status"+i;
+    // editBookBtn.id="edit"+"book"+i;
     editBookBtn.innerHTML="Edit reading status";
     
     
@@ -137,7 +138,7 @@ function addBook() {
 
     formValidation(title, author, pages, status);
     // Add function to buton to edit book reading status 
-    editBookBtn.onclick = function() {editMe("status"+(i-1))};
+    editBookBtn.onclick = function() {editMe(this.id)};
 
 
     // const rbs = document.querySelectorAll('input[name="choice"]');
