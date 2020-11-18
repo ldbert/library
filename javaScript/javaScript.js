@@ -21,8 +21,11 @@ newBookForm.style.visibility = "visible";
 
 function deleteMe(d) {
 
-     alert("You are deliting book with id: " + d);
+    alert(d);
+
+    //  alert("You are deliting book with id: " + d);
      let elem = document.getElementById(d);
+     console.log(elem);
      elem.parentNode.removeChild(elem);
      elem.remove();
     
@@ -108,12 +111,12 @@ function addBook() {
     deleteBookBtn.innerHTML = "Delete Book";
    
     // Assign id to the delete button inside the card
-    deleteBookBtn.id="delete"+"book"+i;
+    deleteBookBtn.id="book"+i;
 
      
-    deleteBookBtn.onclick = function() {deleteMe("book"+(i-1))};
+    deleteBookBtn.onclick = function() {deleteMe(this.id)};
 
-
+    // "book"+(i-1)
     let editBookBtn= document.createElement("button");
     editBookBtn.id="edit"+"book"+i;
     editBookBtn.innerHTML="Edit reading status";

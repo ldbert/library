@@ -42,6 +42,8 @@ p.displayBookForm{
   background-color: lightgrey;
 }
 
+
+
 button{
   margin-top: 10px !important;
 }
@@ -49,7 +51,7 @@ button{
 .card{
   padding: 5px;
   background-color:lightsteelblue !important;
-  max-height: 600px;
+  height: 100%;
 }
 
 
