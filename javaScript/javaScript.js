@@ -19,11 +19,10 @@ newBookForm.style.visibility = "visible";
 
 
 
-function deleteMe(d) {
+function deleteMe(d, title) {
 
-    alert(d);
 
-    //  alert("You are deliting book with id: " + d);
+     alert("You are deliting book titled: " + title );
      let elem = document.getElementById(d);
      console.log(elem);
      elem.parentNode.removeChild(elem);
@@ -34,7 +33,6 @@ function deleteMe(d) {
 
 function editMe(ed){
     
-    alert("ed is " + ed);
     console.log("ed is  " + ed);
     let x = document.getElementById(ed);
     console.log(x);
@@ -114,7 +112,7 @@ function addBook() {
     deleteBookBtn.id="book"+i;
 
      
-    deleteBookBtn.onclick = function() {deleteMe(this.id)};
+    deleteBookBtn.onclick = function() {deleteMe(this.id, title)};
 
     // "book"+(i-1)
     let editBookBtn= document.createElement("button");
